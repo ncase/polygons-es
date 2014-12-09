@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Automatic Simulation - SANDBOX</title>
+	<title>Simulación Automática - ARENA</title>
 	<link href="automatic.css" rel="stylesheet" type="text/css">
 	<link href="doubleslider.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
@@ -20,16 +20,16 @@
 				<div id="stats_text"></div>
 			</div>
 
-			i'll move if <span class="highlight">&lt;<span id="bias_text">33%</span></span> 
-			or <span class="highlight">&gt;<span id="nonconform_text">100%</span></span> of my neighbors are like me
+			me voy si <span class="highlight">&lt;<span id="bias_text">33%</span></span> 
+			o <span class="highlight">&gt;<span id="nonconform_text">100%</span></span> de mis vecinos son como yo
 			<br>
 			<div id="slider"></div>
 			<br>
 
-			the triangle:square ratio is
+			la proporción triángulo:cuadrado es
 			<span class="highlight"><span id="ratio_text_triangles">40</span>:<span id="ratio_text_squares">40</span></span>,
-			board is
-			<span class="highlight" id="empty_text">20% empty</span>
+			el tablero está
+			<span class="highlight" id="empty_text">20% vacío</span>
 			<br>
 			<div id="slider2"></div>
 			<br>
@@ -92,7 +92,7 @@ var whatever = new DoubleSlider(document.getElementById("slider2"),{
 		START_SIM = false;
 		document.getElementById("ratio_text_triangles").innerHTML = Math.round(window.RATIO_TRIANGLES*100);
 		document.getElementById("ratio_text_squares").innerHTML = Math.round(window.RATIO_SQUARES*100);
-		document.getElementById("empty_text").innerHTML = Math.round(window.EMPTINESS*100)+"% empty";
+		document.getElementById("empty_text").innerHTML = Math.round(window.EMPTINESS*100)+"% vacío";
 
 	},
 	onLetGo:function(){
